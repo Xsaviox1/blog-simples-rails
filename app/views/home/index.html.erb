@@ -1,0 +1,9 @@
+<h1>Seja bem vindo ao meu blog pessoal</h1>
+
+<p>Para se dirigir os posts de Sávio siga a rota <%= link_to "posts", posts_path %></p>
+
+<h2>Titulos</h2>
+
+<% @posts.each do |post| %> 
+    <h3> <%= link_to post.title, post %> </h3>
+<% end %>
